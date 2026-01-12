@@ -1,0 +1,121 @@
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\ApplicationInsights.config
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\roslyn\csc.exe
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\roslyn\vbc.exe
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\roslyn\VBCSCompiler.exe
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\SCADA_CSharp.dll.config
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\SCADA_CSharp.dll
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\SCADA_CSharp.pdb
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.AI.Web.dll
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.ApplicationInsights.dll
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\S7.Net.dll
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.AI.Web.xml
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.ApplicationInsights.xml
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\bin\S7.Net.pdb
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.csprojResolveAssemblyReference.cache
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.dll
+C:\Users\germano.pagliero\Desktop\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.pdb
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\ApplicationInsights.config
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\roslyn\csc.exe
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\roslyn\vbc.exe
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\roslyn\VBCSCompiler.exe
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\SCADA_CSharp.dll.config
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\SCADA_CSharp.dll
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\SCADA_CSharp.pdb
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.AI.Web.dll
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.ApplicationInsights.dll
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\S7.Net.dll
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.AI.Web.xml
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.ApplicationInsights.xml
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\bin\S7.Net.pdb
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.csproj.CopyComplete
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.dll
+C:\Users\admin\Desktop\SCADA\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.pdb
+C:\Users\admin\Desktop\SCADA_CSharp\SCADA_CSharp\bin\ApplicationInsights.config
+C:\Users\admin\Desktop\SCADA_CSharp\SCADA_CSharp\bin\SCADA_CSharp.dll.config
+C:\Users\admin\Desktop\SCADA_CSharp\SCADA_CSharp\bin\SCADA_CSharp.dll
+C:\Users\admin\Desktop\SCADA_CSharp\SCADA_CSharp\bin\SCADA_CSharp.pdb
+C:\Users\admin\Desktop\SCADA_CSharp\SCADA_CSharp\bin\S7.Net.dll
+C:\Users\admin\Desktop\SCADA_CSharp\SCADA_CSharp\bin\S7.Net.pdb
+C:\Users\admin\Desktop\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.csproj.CopyComplete
+C:\Users\admin\Desktop\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.dll
+C:\Users\admin\Desktop\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.pdb
+C:\Users\Backupuser\Desktop\5C\SCADA\SCADA MIO\SCADA_CSharp\SCADA_CSharp\bin\ApplicationInsights.config
+C:\Users\Backupuser\Desktop\5C\SCADA\SCADA MIO\SCADA_CSharp\SCADA_CSharp\bin\SCADA_CSharp.dll.config
+C:\Users\Backupuser\Desktop\5C\SCADA\SCADA MIO\SCADA_CSharp\SCADA_CSharp\bin\SCADA_CSharp.dll
+C:\Users\Backupuser\Desktop\5C\SCADA\SCADA MIO\SCADA_CSharp\SCADA_CSharp\bin\SCADA_CSharp.pdb
+C:\Users\Backupuser\Desktop\5C\SCADA\SCADA MIO\SCADA_CSharp\SCADA_CSharp\bin\S7.Net.dll
+C:\Users\Backupuser\Desktop\5C\SCADA\SCADA MIO\SCADA_CSharp\SCADA_CSharp\bin\S7.Net.pdb
+C:\Users\Backupuser\Desktop\5C\SCADA\SCADA MIO\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.csproj.AssemblyReference.cache
+C:\Users\Backupuser\Desktop\5C\SCADA\SCADA MIO\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.csproj.CoreCompileInputs.cache
+C:\Users\Backupuser\Desktop\5C\SCADA\SCADA MIO\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.csproj.CopyComplete
+C:\Users\Backupuser\Desktop\5C\SCADA\SCADA MIO\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.dll
+C:\Users\Backupuser\Desktop\5C\SCADA\SCADA MIO\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.pdb
+C:\Users\Backupuser\Desktop\5C INF\SCADA\SCADA MIO\SCADA_CSharp\SCADA_CSharp\bin\ApplicationInsights.config
+C:\Users\Backupuser\Desktop\5C INF\SCADA\SCADA MIO\SCADA_CSharp\SCADA_CSharp\bin\SCADA_CSharp.dll.config
+C:\Users\Backupuser\Desktop\5C INF\SCADA\SCADA MIO\SCADA_CSharp\SCADA_CSharp\bin\SCADA_CSharp.dll
+C:\Users\Backupuser\Desktop\5C INF\SCADA\SCADA MIO\SCADA_CSharp\SCADA_CSharp\bin\SCADA_CSharp.pdb
+C:\Users\Backupuser\Desktop\5C INF\SCADA\SCADA MIO\SCADA_CSharp\SCADA_CSharp\bin\S7.Net.dll
+C:\Users\Backupuser\Desktop\5C INF\SCADA\SCADA MIO\SCADA_CSharp\SCADA_CSharp\bin\S7.Net.pdb
+C:\Users\Backupuser\Desktop\5C INF\SCADA\SCADA MIO\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.csproj.AssemblyReference.cache
+C:\Users\Backupuser\Desktop\5C INF\SCADA\SCADA MIO\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.csproj.CoreCompileInputs.cache
+C:\Users\Backupuser\Desktop\5C INF\SCADA\SCADA MIO\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.csproj.CopyComplete
+C:\Users\Backupuser\Desktop\5C INF\SCADA\SCADA MIO\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.dll
+C:\Users\Backupuser\Desktop\5C INF\SCADA\SCADA MIO\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.pdb
+C:\Users\germano.pagliero\Desktop\5 inf B\Esercizi\SCADA 2024-25 - Copia\SCADA_CSharp\SCADA_CSharp\bin\ApplicationInsights.config
+C:\Users\germano.pagliero\Desktop\5 inf B\Esercizi\SCADA 2024-25 - Copia\SCADA_CSharp\SCADA_CSharp\bin\SCADA_CSharp.dll.config
+C:\Users\germano.pagliero\Desktop\5 inf B\Esercizi\SCADA 2024-25 - Copia\SCADA_CSharp\SCADA_CSharp\bin\SCADA_CSharp.dll
+C:\Users\germano.pagliero\Desktop\5 inf B\Esercizi\SCADA 2024-25 - Copia\SCADA_CSharp\SCADA_CSharp\bin\SCADA_CSharp.pdb
+C:\Users\germano.pagliero\Desktop\5 inf B\Esercizi\SCADA 2024-25 - Copia\SCADA_CSharp\SCADA_CSharp\bin\S7.Net.dll
+C:\Users\germano.pagliero\Desktop\5 inf B\Esercizi\SCADA 2024-25 - Copia\SCADA_CSharp\SCADA_CSharp\bin\System.Buffers.dll
+C:\Users\germano.pagliero\Desktop\5 inf B\Esercizi\SCADA 2024-25 - Copia\SCADA_CSharp\SCADA_CSharp\bin\System.Memory.dll
+C:\Users\germano.pagliero\Desktop\5 inf B\Esercizi\SCADA 2024-25 - Copia\SCADA_CSharp\SCADA_CSharp\bin\System.Numerics.Vectors.dll
+C:\Users\germano.pagliero\Desktop\5 inf B\Esercizi\SCADA 2024-25 - Copia\SCADA_CSharp\SCADA_CSharp\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\germano.pagliero\Desktop\5 inf B\Esercizi\SCADA 2024-25 - Copia\SCADA_CSharp\SCADA_CSharp\bin\S7.Net.xml
+C:\Users\germano.pagliero\Desktop\5 inf B\Esercizi\SCADA 2024-25 - Copia\SCADA_CSharp\SCADA_CSharp\bin\System.Buffers.xml
+C:\Users\germano.pagliero\Desktop\5 inf B\Esercizi\SCADA 2024-25 - Copia\SCADA_CSharp\SCADA_CSharp\bin\System.Memory.xml
+C:\Users\germano.pagliero\Desktop\5 inf B\Esercizi\SCADA 2024-25 - Copia\SCADA_CSharp\SCADA_CSharp\bin\System.Numerics.Vectors.xml
+C:\Users\germano.pagliero\Desktop\5 inf B\Esercizi\SCADA 2024-25 - Copia\SCADA_CSharp\SCADA_CSharp\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\germano.pagliero\Desktop\5 inf B\Esercizi\SCADA 2024-25 - Copia\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.csproj.AssemblyReference.cache
+C:\Users\germano.pagliero\Desktop\5 inf B\Esercizi\SCADA 2024-25 - Copia\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.csproj.CoreCompileInputs.cache
+C:\Users\germano.pagliero\Desktop\5 inf B\Esercizi\SCADA 2024-25 - Copia\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CS.955D1A38.Up2Date
+C:\Users\germano.pagliero\Desktop\5 inf B\Esercizi\SCADA 2024-25 - Copia\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.dll
+C:\Users\germano.pagliero\Desktop\5 inf B\Esercizi\SCADA 2024-25 - Copia\SCADA_CSharp\SCADA_CSharp\obj\Debug\SCADA_CSharp.pdb

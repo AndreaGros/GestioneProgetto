@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "YGVSKCnn96l9ofgcoFZTPKqRQ9Zslr+s3aJ+EpVxQtw=",
+  "Source": "scadaServer",
+  "BasePath": "_content/scadaServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
