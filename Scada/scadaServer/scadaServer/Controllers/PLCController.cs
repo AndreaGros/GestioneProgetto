@@ -83,6 +83,20 @@ namespace scadaServer.Controllers
             return (bool)myPLC.Read("DB4.DBX50.1");
         }
 
+        [HttpGet("emergenza")]
+        public void emergenza()
+        {
+            if (!myPLC.IsConnected) { return; }
+            myPLC.Write("DB1.DB1.6", true);
+        }
+
+        [HttpGet("reset")]
+        public void reset()
+        {
+            if (!myPLC.IsConnected) { return; }
+            myPLC.Write("DB1.DB0.1", true);
+        }
+
         private void controllaConnessione(bool isConnected)
         {
             if (isConnected)
