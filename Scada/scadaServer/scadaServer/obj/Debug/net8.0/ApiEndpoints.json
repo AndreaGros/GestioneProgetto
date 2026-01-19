@@ -3,7 +3,7 @@
     "ContainingType": "scadaServer.Controllers.PLCController",
     "Method": "connect",
     "RelativePath": "api/PLC/connect",
-    "HttpMethod": "POST",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
@@ -21,9 +21,129 @@
   },
   {
     "ContainingType": "scadaServer.Controllers.PLCController",
-    "Method": "diconnect",
+    "Method": "disconnect",
     "RelativePath": "api/PLC/disconnect",
-    "HttpMethod": "POST",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "scadaServer.Controllers.PLCController",
+    "Method": "pistoneAvanti",
+    "RelativePath": "api/PLC/pistoneAvanti",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "scadaServer.Controllers.PLCController",
+    "Method": "pistoneIndietro",
+    "RelativePath": "api/PLC/pistoneIndietro",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "scadaServer.Controllers.PLCController",
+    "Method": "slittaCentraleGiu",
+    "RelativePath": "api/PLC/slittaCentraleGiu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "scadaServer.Controllers.PLCController",
+    "Method": "slittaCentraleSu",
+    "RelativePath": "api/PLC/slittaCentraleSu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "scadaServer.Controllers.PLCController",
+    "Method": "slittaLatGiu",
+    "RelativePath": "api/PLC/slittaLatGiu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "scadaServer.Controllers.PLCController",
+    "Method": "slittaLatSu",
+    "RelativePath": "api/PLC/slittaLatSu",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
@@ -43,7 +163,7 @@
     "ContainingType": "scadaServer.Controllers.PLCController",
     "Method": "startNastro",
     "RelativePath": "api/PLC/startNastro",
-    "HttpMethod": "POST",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],

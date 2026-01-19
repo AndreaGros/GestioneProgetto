@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "scadaServer\\Controllers\\PLCController.cs",
               "ToolTip": "C:\\Users\\a.gros.3139\\Desktop\\GestioneProgetto\\Scada\\scadaServer\\scadaServer\\Controllers\\PLCController.cs",
               "RelativeToolTip": "scadaServer\\Controllers\\PLCController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAjAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAowA4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-12T11:47:27.232Z",
               "EditorCaption": ""
@@ -55,8 +55,7 @@
               "RelativeToolTip": "scadaServer\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T11:40:38.949Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-12T11:40:38.949Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "scadaServer\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T11:40:01.193Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-12T11:40:01.193Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "scadaServer\\WeatherForecast.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T11:39:57.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-12T11:39:57.663Z"
             }
           ]
         }
