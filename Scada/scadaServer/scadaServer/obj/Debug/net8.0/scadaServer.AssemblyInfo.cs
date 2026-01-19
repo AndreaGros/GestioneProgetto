@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("scadaServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5dd9922da2a6238b0e104474dc03122d9f0e2379")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c735ec206907ac7d6b527e2bde37cd7506027fd3")]
 [assembly: System.Reflection.AssemblyProductAttribute("scadaServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("scadaServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

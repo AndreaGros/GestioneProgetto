@@ -30,9 +30,9 @@ namespace scadaServer.Controllers
         [HttpGet("startNastro")]
         public bool startNastro()
         {
-            if (!myPLC.IsConnected) { return false; }    
+            if (!myPLC.IsConnected) { return false; }
             myPLC.Write("DB1.DBX1.1", true);
-            return true;
+            return (bool)myPLC.Read("DB4.DBX56.0");
         }
 
         [HttpGet("slittaCentraleSu")]
@@ -40,7 +40,7 @@ namespace scadaServer.Controllers
         {
             if (!myPLC.IsConnected) { return false; }
             myPLC.Write("DB1.DBX1.0", true);
-            return true;
+            return (bool)myPLC.Read("DB4.DBX56.1");
         }
 
         [HttpGet("slittaCentraleGiu")]
@@ -48,35 +48,39 @@ namespace scadaServer.Controllers
         {
             if (!myPLC.IsConnected) { return false; }
             myPLC.Write("DB1.DBX0.7", true);
-            return true;
+            return (bool)myPLC.Read("DB4.DBX56.4");
         }
 
         [HttpGet("pistoneAvanti")]
         public bool pistoneAvanti()
         {
+            if (!myPLC.IsConnected) { return false; }
             myPLC.Write("DB1.DBX0.6", true);
-            return true;
+            return (bool)myPLC.Read("DB4.DBX50.3");
         }
 
         [HttpGet("pistoneIndietro")]
         public bool pistoneIndietro()
         {
+            if (!myPLC.IsConnected) { return false; }
             myPLC.Write("DB1.DBX0.5", true);
-            return true;
+            return (bool)myPLC.Read("DB4.DBX50.2");
         }
 
         [HttpGet("slittaLatSu")]
         public bool slittaLatSu()
         {
+            if (!myPLC.IsConnected) { return false; }
             myPLC.Write("DB1.DBX0.4", true);
-            return true;
+            return (bool)myPLC.Read("DB4.DBX50.1");
         }
 
         [HttpGet("slittaLatGiu")]
         public bool slittaLatGiu()
         {
+            if (!myPLC.IsConnected) { return false; }
             myPLC.Write("DB1.DBX0.3", true);
-            return true;
+            return (bool)myPLC.Read("DB4.DBX50.1");
         }
 
         private void controllaConnessione(bool isConnected)
