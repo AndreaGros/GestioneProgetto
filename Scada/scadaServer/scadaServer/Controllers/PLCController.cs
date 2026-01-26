@@ -114,5 +114,11 @@ namespace scadaServer.Controllers
             else
                 Console.WriteLine("-- Disconnected --");
         }
+        [HttpGet("aggiornaPezzi")]
+
+        private IActionResult aggiornaPezzi()
+        {
+            return Ok(new { nPezzi = Convert.ToInt32(myPLC.Read("DB4.DBW54")) });
+        }
     }
 }

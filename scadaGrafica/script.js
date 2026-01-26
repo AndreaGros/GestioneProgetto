@@ -11,8 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const btnSlittaLatGiu = document.getElementById("btnSlittaLatGiu")
     const btnReset = document.getElementById("btnReset")
 
-
-
+    btnAggiorna.addEventListener("click", aggiornaPezzi)
     btnConnect.addEventListener("click", connect);
     btnDisconnect.addEventListener("click", disconnect)
     btnMan.addEventListener("click", man);
@@ -49,7 +48,7 @@ async function disconnect() {
 async function man() {
     try {
         const response = await fetch('https://localhost:7181/api/PLC/btnMan');
-        const data = await response.json();
+        const data = await response.text();
         console.log("Risposta PLC:", data);
     } catch (error) {
         console.error("Errore connessione PLC:", error);
@@ -61,8 +60,18 @@ async function startNastro() {
     alert("Comando Nastro Avanti inviato!");
     try {
         const response = await fetch('https://localhost:7181/api/PLC/startNastro');
-        const data = await response.text();
-        console.log("Risposta PLC:", data);
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const data = await response.json();
+        
+        if (data.success) {
+            console.log("Nastro avviato! Numero pezzi:", data.nPezzi);
+            nPezzi = data.nPezzi
+        } else {
+            console.log("Errore: Nastro non avviato");
+        }
     } catch (error) {
         console.error("Errore connessione PLC:", error);
     }
@@ -139,6 +148,14 @@ async function emergenza() {
 async function reset() {
     try {
         const response = await fetch('https://localhost:7181/api/PLC/reset');
+    } catch (error) {
+        console.error("Errore connessione PLC:", error);
+    }
+}
+
+async function aggiornaPezzi(){
+    try {
+        const response = await fetch('https://localhost:7181/api/PLC/aggiorna');
     } catch (error) {
         console.error("Errore connessione PLC:", error);
     }
