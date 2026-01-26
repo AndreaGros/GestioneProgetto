@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg scada-navbar mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-cpu"></i> CONTROL PANEL
+            </a>
+
+            <div class="d-flex align-items-center ms-auto">
+                <div class="connection-status d-flex align-items-center me-3">
+                    <div class="status-dot pulsing"></div>
+                    <span class="status-text ms-2">MACCHINA</span>
+                </div>
+
+                <span class="badge bg-dark-soft text-muted me-3 d-none d-sm-block">192.168.2.122</span>
+
+                <button class="btn btn-sm btn-outline-info me-3" id="btnConnect">
+                    <i class="bi bi-arrow-repeat"></i> Riconnetti
+                </button>
+                <button class="btn btn-sm btn-outline-danger" id="btnDisconnect">
+                    <i class="bi bi-arrow-repeat"></i> Disconnetti
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-sm-6">
+                <div class="card scada-card text-center">
+                    <div class="card-header-custom">
+                        <h2>Pezzi</h2>
+                    </div>
+                    <div class="card-body counter-value">
+                        0<span>/3</span>
+                    </div>
+                    <button class="btn btn-outline-primary" id="btnReset"><i class="bi bi-arrow-clockwise"></i></button>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="card scada-card text-center">
+                    <div class="card-header-custom">
+                        <h2>Modalità</h2>
+                    </div>
+                    <div class="card-body counter-value">
+                        <button class="btn btn-outline-primary" id="btnMan"><i class="bi bi-gear-fill"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row g-3">
+            <div class="col-sm-3">
+                <div class="card scada-card text-center p-3">
+                    <h2 class="mb-3">Nastro</h2>
+                    <div class="button-group d-flex justify-content-center gap-3">
+                        <button class="btn btn-outline-danger"><i class="bi bi-stop"></i></button>
+                        <button class="btn btn-outline-success" id="btnStart"><i class="bi bi-caret-right-fill"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card scada-card text-center p-3">
+                    <h2 class="mb-3">Ascensore</h2>
+                    <div class="button-group d-flex justify-content-center gap-3">
+                        <button class="btn btn-outline-danger" id="btnSlittaCentroGiu"><i class="bi bi-stop"></i></button>
+                        <button class="btn btn-outline-success" id="btnSlittaCentroSu"><i class="bi bi-caret-right-fill"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card scada-card text-center p-3">
+                    <h2 class="mb-3">Pistone</h2>
+                    <div class="button-group d-flex justify-content-center gap-3">
+                        <button class="btn btn-outline-danger" id="btnPistoneIndietro"><i class="bi bi-stop"></i></button>
+                        <button class="btn btn-outline-success" id="btnPistoneAvanti"><i class="bi bi-caret-right-fill"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card scada-card text-center p-3">
+                    <h2 class="mb-3">Slitta laterale</h2>
+                    <div class="button-group d-flex justify-content-center gap-3">
+                        <button class="btn btn-outline-danger" id="btnSlittaLatGiu"><i class="bi bi-arrows-vertical"></i></button>
+                        <button class="btn btn-outline-success" id="btnSlittaLatSu"><i class="bi bi-arrows-vertical"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -27,12 +27,22 @@ namespace scadaServer.Controllers
             return myPLC.IsConnected;
         }
 
-        [HttpGet("startNastro")]
-        public bool startNastro()
+        [HttpGet("btnMan")]
+        public bool btnMan()
         {
             if (!myPLC.IsConnected) { return false; }
+            myPLC.Write("DB1.DBX1.4", true);
+            return Convert.ToBoolean(myPLC.Read("DB1.DBX1.4"));
+        }
+
+        [HttpGet("startNastro")]
+        public IActionResult startNastro()
+        {
+            if (!myPLC.IsConnected) { return Ok(new { success = false}); }
             myPLC.Write("DB1.DBX1.1", true);
-            return (bool)myPLC.Read("DB4.DBX56.0");
+            bool success = Convert.ToBoolean(myPLC.Read("DB4.DBX56.0"));
+            int nPezzi = Convert.ToInt32(myPLC.Read("DB4.DBW54"));
+            return Ok(new { success = success, nPezzi = nPezzi }); 
         }
 
         [HttpGet("slittaCentraleSu")]
@@ -87,14 +97,14 @@ namespace scadaServer.Controllers
         public void emergenza()
         {
             if (!myPLC.IsConnected) { return; }
-            myPLC.Write("DB1.DB1.6", true);
+            myPLC.Write("DB1.DBX1.6", false);
         }
 
         [HttpGet("reset")]
         public void reset()
         {
             if (!myPLC.IsConnected) { return; }
-            myPLC.Write("DB1.DB0.1", true);
+            myPLC.Write("DB1.DBX0.1", true);
         }
 
         private void controllaConnessione(bool isConnected)

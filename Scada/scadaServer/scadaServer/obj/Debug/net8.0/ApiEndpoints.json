@@ -1,6 +1,26 @@
 [
   {
     "ContainingType": "scadaServer.Controllers.PLCController",
+    "Method": "btnMan",
+    "RelativePath": "api/PLC/btnMan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "scadaServer.Controllers.PLCController",
     "Method": "connect",
     "RelativePath": "api/PLC/connect",
     "HttpMethod": "GET",
@@ -41,6 +61,22 @@
   },
   {
     "ContainingType": "scadaServer.Controllers.PLCController",
+    "Method": "emergenza",
+    "RelativePath": "api/PLC/emergenza",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "scadaServer.Controllers.PLCController",
     "Method": "pistoneAvanti",
     "RelativePath": "api/PLC/pistoneAvanti",
     "HttpMethod": "GET",
@@ -75,6 +111,22 @@
           "application/json",
           "text/json"
         ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "scadaServer.Controllers.PLCController",
+    "Method": "reset",
+    "RelativePath": "api/PLC/reset",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
         "StatusCode": 200
       }
     ]
@@ -167,36 +219,6 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "scadaServer.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[scadaServer.WeatherForecast, scadaServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   }
 ]
