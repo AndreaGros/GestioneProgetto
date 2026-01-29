@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #fff;
+    transition: background 0.3s, color 0.3s;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Pattern di sfondo sottile */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(56, 189, 248, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(56, 189, 248, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.container-fluid {
+    position: relative;
+    z-index: 1;
+}
+
+/* Card SCADA migliorata */
+.card.scada-card {
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    color: #f9fafb;
+    border-radius: 12px;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        0 0 0 1px rgba(56, 189, 248, 0.1) inset;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.card.scada-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 15px 40px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(56, 189, 248, 0.3) inset;
+    border-color: rgba(56, 189, 248, 0.4);
+}
+
+/* Header delle card */
+.card-header-custom {
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.15), rgba(59, 130, 246, 0.15));
+    border-bottom: 2px solid rgba(56, 189, 248, 0.3);
+    padding: 0.6rem 1rem;
+    margin: -15px -15px 0 -15px;
+    border-radius: 12px 12px 0 0;
+}
+
+.card-header-custom h2,
+.card-header-custom h5 {
+    color: #38bdf8;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+/* Navbar migliorata */
+.scada-navbar {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%) !important;
+    border-bottom: 3px solid #38bdf8;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 8px 0;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    color: #f8fafc !important;
+    letter-spacing: 3px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #38bdf8 !important;
+    transform: scale(1.05);
+}
+
+.brand-text {
+    background: linear-gradient(135deg, #38bdf8, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Status connection */
+.connection-status {
+    background: rgba(15, 23, 42, 0.6) !important;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    transition: all 0.3s ease;
+}
+
+.status-text {
+    font-size: 0.85rem;
+    color: #22c55e;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Punto luminoso pulsante */
+.status-dot {
+    width: 12px;
+    height: 12px;
+    background: radial-gradient(circle, #22c55e 0%, #15803d 100%);
+    border-radius: 50%;
+    box-shadow: 
+        0 0 10px #22c55e,
+        0 0 20px rgba(34, 197, 94, 0.5);
+    position: relative;
+}
+
+.status-dot::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    background: rgba(34, 197, 94, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pulsing {
+    animation: pulse-green 2s infinite ease-in-out;
+}
+
+@keyframes pulse-green {
+    0%, 100% { 
+        transform: scale(0.95); 
+        box-shadow: 0 0 10px #22c55e, 0 0 20px rgba(34, 197, 94, 0.5);
+    }
+    50% { 
+        transform: scale(1.1); 
+        box-shadow: 0 0 20px #22c55e, 0 0 40px rgba(34, 197, 94, 0.8);
+    }
+}
+
+.bg-dark-soft {
+    background: rgba(15, 23, 42, 0.8) !important;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    font-family: 'Courier New', monospace;
+    color: #94a3b8 !important;
+    backdrop-filter: blur(10px);
+}
+
+/* Display contatore pezzi */
+.counter-display {
+    padding: 1.5rem 0.5rem;
+}
+
+.counter-value {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #38bdf8;
+    text-shadow: 
+        0 0 20px rgba(56, 189, 248, 0.5),
+        0 0 40px rgba(56, 189, 248, 0.3);
+    font-family: 'Courier New', monospace;
+    line-height: 1;
+    display: inline-block;
+    animation: glow-pulse 2s ease-in-out infinite;
+}
+
+.counter-total {
+    font-size: 2.8rem;
+    color: #64748b;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+@keyframes glow-pulse {
+    0%, 100% {
+        text-shadow: 
+            0 0 20px rgba(56, 189, 248, 0.5),
+            0 0 40px rgba(56, 189, 248, 0.3);
+    }
+    50% {
+        text-shadow: 
+            0 0 30px rgba(56, 189, 248, 0.8),
+            0 0 60px rgba(56, 189, 248, 0.5);
+    }
+}
+
+/* Pulsanti controllo */
+.btn-control {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border-width: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-control::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
+}
+
+.btn-control:hover::before {
+    width: 200%;
+    height: 200%;
+}
+
+.btn-control:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-control:active {
+    transform: scale(0.95);
+}
+
+.btn-success.btn-control {
+    background: linear-gradient(135deg, #22c55e, #15803d);
+    border-color: #22c55e;
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+}
+
+.btn-success.btn-control:hover {
+    background: linear-gradient(135deg, #16a34a, #14532d);
+    box-shadow: 0 6px 25px rgba(34, 197, 94, 0.5);
+}
+
+.btn-danger.btn-control {
+    background: linear-gradient(135deg, #ef4444, #b91c1c);
+    border-color: #ef4444;
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+}
+
+.btn-danger.btn-control:hover {
+    background: linear-gradient(135deg, #dc2626, #991b1b);
+    box-shadow: 0 6px 25px rgba(239, 68, 68, 0.5);
+}
+
+/* Pulsanti generali migliorati */
+.btn {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    border-width: 2px;
+}
+
+.btn-outline-primary {
+    border-color: #38bdf8;
+    color: #38bdf8;
+}
+
+.btn-outline-primary:hover {
+    background: linear-gradient(135deg, #38bdf8, #0284c7);
+    border-color: #38bdf8;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(56, 189, 248, 0.4);
+}
+
+.btn-outline-info {
+    border-color: #06b6d4;
+    color: #06b6d4;
+}
+
+.btn-outline-info:hover {
+    background: linear-gradient(135deg, #06b6d4, #0891b2);
+    border-color: #06b6d4;
+    color: white;
+    box-shadow: 0 5px 20px rgba(6, 182, 212, 0.4);
+}
+
+.btn-outline-danger {
+    border-color: #ef4444;
+    color: #ef4444;
+}
+
+.btn-outline-danger:hover {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    border-color: #ef4444;
+    color: white;
+    box-shadow: 0 5px 20px rgba(239, 68, 68, 0.4);
+}
+
+.btn-outline-warning {
+    border-color: #f59e0b;
+    color: #f59e0b;
+}
+
+.btn-outline-warning:hover {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    border-color: #f59e0b;
+    color: white;
+    box-shadow: 0 5px 20px rgba(245, 158, 11, 0.4);
+}
+
+/* Card emergenza */
+.emergency-card {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(185, 28, 28, 0.1));
+    border: 2px solid rgba(239, 68, 68, 0.3);
+}
+
+.btn-emergency {
+    background: linear-gradient(135deg, #ef4444, #b91c1c);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 
+        0 10px 30px rgba(239, 68, 68, 0.4),
+        0 0 0 3px rgba(239, 68, 68, 0.2) inset;
+    transition: all 0.3s ease;
+    animation: emergency-pulse 2s infinite;
+}
+
+.btn-emergency:hover {
+    transform: scale(1.02);
+    box-shadow: 
+        0 15px 40px rgba(239, 68, 68, 0.6),
+        0 0 0 4px rgba(239, 68, 68, 0.3) inset;
+    background: linear-gradient(135deg, #dc2626, #991b1b);
+}
+
+.btn-success.btn-emergency {
+    background: linear-gradient(135deg, #22c55e, #15803d);
+    box-shadow: 
+        0 10px 30px rgba(34, 197, 94, 0.4),
+        0 0 0 3px rgba(34, 197, 94, 0.2) inset;
+    animation: success-pulse 2s infinite;
+}
+
+.btn-success.btn-emergency:hover {
+    background: linear-gradient(135deg, #16a34a, #14532d);
+    box-shadow: 
+        0 15px 40px rgba(34, 197, 94, 0.6),
+        0 0 0 4px rgba(34, 197, 94, 0.3) inset;
+}
+
+@keyframes emergency-pulse {
+    0%, 100% {
+        box-shadow: 
+            0 10px 30px rgba(239, 68, 68, 0.4),
+            0 0 0 3px rgba(239, 68, 68, 0.2) inset;
+    }
+    50% {
+        box-shadow: 
+            0 15px 40px rgba(239, 68, 68, 0.6),
+            0 0 0 5px rgba(239, 68, 68, 0.4) inset;
+    }
+}
+
+@keyframes success-pulse {
+    0%, 100% {
+        box-shadow: 
+            0 10px 30px rgba(34, 197, 94, 0.4),
+            0 0 0 3px rgba(34, 197, 94, 0.2) inset;
+    }
+    50% {
+        box-shadow: 
+            0 15px 40px rgba(34, 197, 94, 0.6),
+            0 0 0 5px rgba(34, 197, 94, 0.4) inset;
+    }
+}
+
+/* Info text sotto i controlli */
+.text-muted {
+    color: #64748b !important;
+    font-size: 0.75rem;
+}
+
+/* Footer */
+footer {
+    background: rgba(15, 23, 42, 0.5);
+    border-top: 1px solid rgba(56, 189, 248, 0.2);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .counter-value {
+        font-size: 3.5rem;
+    }
+    
+    .counter-total {
+        font-size: 2rem;
+    }
+    
+    .btn-control {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .card-header-custom h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Animazioni al caricamento */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card.scada-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.card.scada-card:nth-child(1) { animation-delay: 0.1s; }
+.card.scada-card:nth-child(2) { animation-delay: 0.2s; }
+.card.scada-card:nth-child(3) { animation-delay: 0.3s; }
+.card.scada-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* Scrollbar personalizzata */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #38bdf8, #0284c7);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #0284c7, #0369a1);
+}

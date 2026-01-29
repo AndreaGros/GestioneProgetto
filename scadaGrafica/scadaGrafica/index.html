@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <!-- Navbar migliorata -->
+    <nav class="navbar navbar-expand-lg scada-navbar mb-3 shadow-lg">
+        <div class="container-fluid px-3">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+                <i class="bi bi-cpu me-2 fs-4"></i> 
+                <span class="brand-text">CONTROL PANEL</span>
+            </a>
+
+            <div class="d-flex align-items-center ms-auto gap-3">
+                <div class="connection-status d-flex align-items-center bg-dark-soft px-3 py-2 rounded-pill">
+                    <div class="status-dot pulsing"></div>
+                    <span class="status-text ms-2 fw-semibold">Impacchettatore</span>
+                </div>
+
+                <span class="badge bg-dark-soft text-muted d-none d-sm-inline-flex align-items-center px-3 py-2">
+                    <i class="bi bi-router me-2"></i>192.168.2.122
+                </span>
+
+                <button class="btn btn-sm btn-outline-info d-flex align-items-center" id="btnConnect">
+                    <i class="bi bi-arrow-repeat me-1"></i> 
+                    <span class="d-none d-md-inline">Riconnetti</span>
+                </button>
+                <button class="btn btn-sm btn-outline-danger d-flex align-items-center" id="btnDisconnect">
+                    <i class="bi bi-x-circle me-1"></i> 
+                    <span class="d-none d-md-inline">Disconnetti</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container-fluid px-3">
+        <!-- Sezione superiore - Pezzi e Modalità -->
+        <div class="row g-3 mb-4">
+            <div class="col-lg-6">
+                <div class="card scada-card h-100 text-center">
+                    <div class="card-header-custom d-flex align-items-center justify-content-center">
+                        <i class="bi bi-box-seam me-2 fs-4"></i>
+                        <h2 class="mb-0">Pezzi</h2>
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-center py-3">
+                        <div class="counter-display mb-3">
+                            <span id="nPezzi" class="counter-value">0</span>
+                            <span class="counter-total">/3</span>
+                        </div>
+                        <div class="d-flex gap-3 justify-content-center">
+                            <button class="btn btn-outline-primary btn-lg flex-fill" id="btnAggiorna">
+                                <i class="bi bi-arrow-clockwise me-2"></i>Aggiorna
+                            </button>
+                            <button class="btn btn-outline-warning btn-lg px-4" id="btnReset">
+                                <i class="bi bi-arrow-counterclockwise fs-5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card scada-card h-100 text-center">
+                    <div class="card-header-custom d-flex align-items-center justify-content-center">
+                        <i class="bi bi-gear-fill me-2 fs-4"></i>
+                        <h2 class="mb-0">Modalità</h2>
+                    </div>
+                    <div class="card-body d-flex align-items-center justify-content-center">
+                        <button class="btn btn-outline-primary btn-lg px-5 py-3" id="btnMan">
+                            <i class="bi bi-gear-fill me-2 fs-4"></i>
+                            <span class="fs-5">Manuale</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sezione controlli operativi -->
+        <div class="row g-3 mb-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="card scada-card h-100 text-center">
+                    <div class="card-header-custom d-flex align-items-center justify-content-center">
+                        <i class="bi bi-arrows-move me-2"></i>
+                        <h5 class="mb-0">Nastro</h5>
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-center py-3">
+                        <div class="button-group d-flex justify-content-center gap-3">
+                            <button class="btn btn-danger btn-control">
+                                <i class="bi bi-stop-fill fs-4"></i>
+                            </button>
+                            <button class="btn btn-success btn-control" id="btnStart">
+                                <i class="bi bi-play-fill fs-4"></i>
+                            </button>
+                        </div>
+                        <div class="mt-2 text-muted small">
+                            <i class="bi bi-info-circle me-1"></i>Controllo nastro trasportatore
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card scada-card h-100 text-center">
+                    <div class="card-header-custom d-flex align-items-center justify-content-center">
+                        <i class="bi bi-arrow-down-up me-2"></i>
+                        <h5 class="mb-0">Ascensore</h5>
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-center py-3">
+                        <div class="button-group d-flex justify-content-center gap-3">
+                            <button class="btn btn-danger btn-control" id="btnSlittaCentroGiu">
+                                <i class="bi bi-arrow-down fs-4"></i>
+                            </button>
+                            <button class="btn btn-success btn-control" id="btnSlittaCentroSu">
+                                <i class="bi bi-arrow-up fs-4"></i>
+                            </button>
+                        </div>
+                        <div class="mt-2 text-muted small">
+                            <i class="bi bi-info-circle me-1"></i>Movimento verticale
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card scada-card h-100 text-center">
+                    <div class="card-header-custom d-flex align-items-center justify-content-center">
+                        <i class="bi bi-arrow-left-right me-2"></i>
+                        <h5 class="mb-0">Pistone</h5>
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-center py-3">
+                        <div class="button-group d-flex justify-content-center gap-3">
+                            <button class="btn btn-danger btn-control" id="btnPistoneIndietro">
+                                <i class="bi bi-arrow-left fs-4"></i>
+                            </button>
+                            <button class="btn btn-success btn-control" id="btnPistoneAvanti">
+                                <i class="bi bi-arrow-right fs-4"></i>
+                            </button>
+                        </div>
+                        <div class="mt-2 text-muted small">
+                            <i class="bi bi-info-circle me-1"></i>Movimento orizzontale
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card scada-card h-100 text-center">
+                    <div class="card-header-custom d-flex align-items-center justify-content-center">
+                        <i class="bi bi-distribute-vertical me-2"></i>
+                        <h5 class="mb-0">Slitta laterale</h5>
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-center py-3">
+                        <div class="button-group d-flex justify-content-center gap-3">
+                            <button class="btn btn-danger btn-control" id="btnSlittaLatGiu">
+                                <i class="bi bi-arrow-down fs-4"></i>
+                            </button>
+                            <button class="btn btn-success btn-control" id="btnSlittaLatSu">
+                                <i class="bi bi-arrow-up fs-4"></i>
+                            </button>
+                        </div>
+                        <div class="mt-2 text-muted small">
+                            <i class="bi bi-info-circle me-1"></i>Regolazione laterale
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pulsante emergenza -->
+        <div class="row g-3 mb-0">
+            <div class="col-lg-6 col-12">
+                <div class="card scada-card emergency-card text-center">
+                    <div class="card-body py-3">
+                        <button class="btn btn-danger btn-emergency w-100 py-3" id="btnEmergenza">
+                            <i class="bi bi-exclamation-triangle-fill me-2 fs-5"></i>
+                            <span class="fs-6 fw-bold">EMERGENZA</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="card scada-card text-center">
+                    <div class="card-body py-3">
+                        <button class="btn btn-success btn-emergency w-100 py-3" id="btnAnnullaEmergenza">
+                            <i class="bi bi-check-circle-fill me-2 fs-5"></i>
+                            <span class="fs-6 fw-bold">ANNULLA EMERGENZA</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer informativo -->
+    <footer class="text-center py-2 mt-2">
+        <div class="container">
+            <small class="text-muted">
+                <i class="bi bi-shield-check me-1"></i>
+                Sistema SCADA - Pannello di controllo industriale
+            </small>
+        </div>
+    </footer>
+</body>
+
+</html>
