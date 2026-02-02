@@ -1,6 +1,32 @@
 [
   {
     "ContainingType": "scadaServer.Controllers.PLCController",
+    "Method": "aggiornaPezzi",
+    "RelativePath": "api/PLC/aggiornaPezzi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "scadaServer.Controllers.PLCController",
+    "Method": "annullaEmergenza",
+    "RelativePath": "api/PLC/annullaEmergenza",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "scadaServer.Controllers.PLCController",
     "Method": "btnMan",
     "RelativePath": "api/PLC/btnMan",
     "HttpMethod": "GET",
@@ -123,13 +149,7 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "scadaServer.Controllers.PLCController",
@@ -215,6 +235,16 @@
     "ContainingType": "scadaServer.Controllers.PLCController",
     "Method": "startNastro",
     "RelativePath": "api/PLC/startNastro",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "scadaServer.Controllers.PLCController",
+    "Method": "stopNastro",
+    "RelativePath": "api/PLC/stopNastro",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

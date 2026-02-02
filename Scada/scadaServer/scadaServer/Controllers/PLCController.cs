@@ -42,15 +42,25 @@ namespace scadaServer.Controllers
             myPLC.Write("DB1.DBX1.1", true);
             bool success = Convert.ToBoolean(myPLC.Read("DB4.DBX56.0"));
             int nPezzi = Convert.ToInt32(myPLC.Read("DB4.DBW54"));
-            return Ok(new { success = success, nPezzi = nPezzi }); 
+            return Ok(new { success = success}); 
         }
+
+        [HttpGet("stopNastro")]
+        public IActionResult stopNastro()
+        {
+            if (!myPLC.IsConnected) { return Ok(new { success = false }); }
+            myPLC.Write("DB1.DBX0.2", true);
+            bool success = Convert.ToBoolean(myPLC.Read("DB4.DBX56.0"));
+            return Ok(new { success = success });
+        }
+
 
         [HttpGet("slittaCentraleSu")]
         public bool slittaCentraleSu()
         {
             if (!myPLC.IsConnected) { return false; }
             myPLC.Write("DB1.DBX1.0", true);
-            return (bool)myPLC.Read("DB4.DBX56.1");
+            return Convert.ToBoolean(myPLC.Read("DB4.DBX56.1"));
         }
 
         [HttpGet("slittaCentraleGiu")]
@@ -100,11 +110,26 @@ namespace scadaServer.Controllers
             myPLC.Write("DB1.DBX1.6", false);
         }
 
-        [HttpGet("reset")]
-        public void reset()
+        [HttpGet("annullaEmergenza")]
+        public void annullaEmergenza()
         {
             if (!myPLC.IsConnected) { return; }
+            myPLC.Write("DB1.DBX1.6", true);
+        }
+
+        [HttpGet("reset")]
+        public IActionResult reset()
+        {
+            if (!myPLC.IsConnected) { return Ok(new { success = false }); }
             myPLC.Write("DB1.DBX0.1", true);
+            return Ok(new { success = true, nPezzi = Convert.ToInt32(myPLC.Read("DB4.DBW54")) });
+        }
+
+        [HttpGet("aggiornaPezzi")]
+        public IActionResult aggiornaPezzi()
+        {
+            if (!myPLC.IsConnected) { return  Ok(new { success = false }); }
+            return Ok(new { success = true, nPezzi = Convert.ToInt32(myPLC.Read("DB4.DBW54")) });
         }
 
         private void controllaConnessione(bool isConnected)
@@ -114,11 +139,6 @@ namespace scadaServer.Controllers
             else
                 Console.WriteLine("-- Disconnected --");
         }
-        [HttpGet("aggiornaPezzi")]
 
-        private IActionResult aggiornaPezzi()
-        {
-            return Ok(new { nPezzi = Convert.ToInt32(myPLC.Read("DB4.DBW54")) });
-        }
     }
 }

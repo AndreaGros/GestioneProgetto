@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const btnDisconnect = document.getElementById("btnDisconnect")
     const btnMan = document.getElementById("btnMan");
     const btnStart = document.getElementById("btnStart");
+    const btnStop = document.getElementById("btnStop")
     const btnSlittaCentroSu = document.getElementById("btnSlittaCentroSu")
     const btnSlittaCentroGiu = document.getElementById("btnSlittaCentroGiu")
     const btnPistoneAvanti = document.getElementById("btnPistoneAvanti")
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btnDisconnect.addEventListener("click", disconnect)
     btnMan.addEventListener("click", man);
     btnStart.addEventListener("click", startNastro);
+    btnStop.addEventListener("click",  stopNastro)
     btnSlittaCentroSu.addEventListener("click", slittaCentroSu)
     btnSlittaCentroGiu.addEventListener("click", slittaCentroGiu)
     btnPistoneAvanti.addEventListener("click", pistoneAvanti)
@@ -68,14 +70,27 @@ async function startNastro() {
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
-        const data = await response.json();
         
-        if (data.success) {
-            console.log("Nastro avviato! Numero pezzi:", data.nPezzi);
-            nPezzi = data.nPezzi
-        } else {
-            console.log("Errore: Nastro non avviato");
+    } catch (error) {
+        console.error("Errore connessione PLC:", error);
+    }
+}
+
+async function stopNastro() {
+    alert("Comando Nastro Avanti inviato!");
+    try {
+        const response = await fetch('https://localhost:7181/api/PLC/stopNastro');
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
         }
+
+        const data = await response.json()
+
+        if(data.success){
+            alert("Nastro stoppato")
+        }
+        
     } catch (error) {
         console.error("Errore connessione PLC:", error);
     }
@@ -152,6 +167,15 @@ async function emergenza() {
 async function reset() {
     try {
         const response = await fetch('https://localhost:7181/api/PLC/reset');
+        if(!response.ok){
+            alert("Errore nell'aggiornamento")
+            return
+        }
+        const data = await response.json();
+        if (data.success) {
+            alert("Resettato")
+            nPezzi.textContent = data.nPezzi
+        }
     } catch (error) {
         console.error("Errore connessione PLC:", error);
     }
@@ -167,7 +191,17 @@ async function annullaEmergenza() {
 
 async function aggiornaPezzi(){
     try {
-        const response = await fetch('https://localhost:7181/api/PLC/aggiorna');
+        const response = await fetch('https://localhost:7181/api/PLC/aggiornaPezzi');
+        if(!response.ok){
+            alert("Errore nell'aggiornamento")
+            return
+        }
+        const data = await response.json();
+        if (data.success) {
+            alert("aggiornato")
+            nPezzi.textContent = data.nPezzi
+        }
+
     } catch (error) {
         console.error("Errore connessione PLC:", error);
     }
